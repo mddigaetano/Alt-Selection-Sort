@@ -9,10 +9,10 @@
 void SelectionSort(int v[],int n){
     int i,max,j,scambio;
     
-    for(i=0;i<n-1;i++){
+    for(i=n-1;i>0;i--){
         max=i;
         
-        for(j=i+1;j<n;j++){
+        for(j=i-1;j>=0;j--){
             if(v[j]>v[max]){
                 max=j;
             }
